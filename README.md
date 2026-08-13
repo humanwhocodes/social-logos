@@ -208,9 +208,10 @@ artwork that isn't listed there.
 
 ### Maintenance skills
 
-Two Claude Code skills in `.claude/skills/` cover the maintenance work. They
-encode the failure modes and licensing decisions that aren't obvious from the
-commands alone, so prefer them over doing it by hand.
+Two skills in `.agents/skills/` cover the maintenance work. They encode the
+failure modes and licensing decisions that aren't obvious from the commands
+alone, so prefer them over doing it by hand. (`.claude/skills` is a symlink to
+that directory, so Claude Code picks them up.)
 
 | Skill | Use it when |
 | ----- | ----------- |

@@ -60,7 +60,7 @@ const simpleIcons = {
 			throw new Error(
 				`simple-icons has no icon named "${icon}". If it was removed upstream, ` +
 					`move this entry to the "simple-icons-archived" collection and give it ` +
-					`an \`artwork\` block. See .claude/skills/update-social-logos.`,
+					`an \`artwork\` block. See the update-social-logos skill.`,
 			);
 		}
 
