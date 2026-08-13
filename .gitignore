@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+# Generated from vendor/logos/ by scripts/generate.js
+src/svg/
+src/logos/
+src/index.ts
+
+# LOGOS.md is generated too, but is committed because the README links to it.

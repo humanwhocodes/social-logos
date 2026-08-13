@@ -1,0 +1,68 @@
+{
+	"name": "@humanwhocodes/social-logos",
+	"version": "1.0.0",
+	"description": "Social media logos as standalone SVG files and tree-shakeable React components.",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		},
+		"./svg/*.svg": "./src/svg/*.svg",
+		"./svg/*": "./src/svg/*.svg",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"dist",
+		"src/svg",
+		"LOGOS.md",
+		"NOTICE.md"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"generate": "node scripts/generate.js",
+		"build": "npm run generate && tsc",
+		"update:vendor": "node scripts/update-vendor.js",
+		"pretest": "npm run build",
+		"test": "node --test \"tests/**/*.test.js\"",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"social",
+		"logos",
+		"icons",
+		"svg",
+		"react",
+		"react-components",
+		"social-media"
+	],
+	"author": "Nicholas C. Zakas",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/humanwhocodes/social-logos.git"
+	},
+	"bugs": {
+		"url": "https://github.com/humanwhocodes/social-logos/issues"
+	},
+	"homepage": "https://github.com/humanwhocodes/social-logos#readme",
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0"
+	},
+	"peerDependenciesMeta": {
+		"react": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@types/react": "^19.0.0",
+		"@types/react-dom": "^19.0.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"simple-icons": "^16.28.0",
+		"typescript": "^5.7.0"
+	}
+}
