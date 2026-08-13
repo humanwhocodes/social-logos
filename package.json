@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"description": "Social media logos as standalone SVG files and tree-shakeable React components.",
 	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
