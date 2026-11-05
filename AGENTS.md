@@ -125,6 +125,14 @@ When adding a logo, no test changes are needed — the suite derives its
 expectations from `scripts/manifest.js`. If you find yourself hardcoding a logo
 name or SVG string in a test, derive it from the manifest instead.
 
+## Commit messages and pull request titles
+
+Both commit messages and pull request titles **must** use Conventional Commits
+format: `<type>(<optional scope>): <description>`. Use a relevant type such as
+`feat`, `fix`, `docs`, `test`, `build`, or `chore`; a scope such as `logos` or
+`vendor` is optional. Examples: `docs: clarify agent instructions` and
+`fix(logos): correct Mastodon artwork`.
+
 ## Conventions
 
 - Tabs for indentation, in every language.
